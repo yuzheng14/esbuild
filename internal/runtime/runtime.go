@@ -250,6 +250,7 @@ func Source(unsupportedJSFeatures compat.JSFeature) logger.Source {
 		// - kind === undefined: class
 		// - kind === 1: method, parameter
 		// - kind === 2: field
+		/* @__NO_SIDE_EFFECTS__ */
 		export var __decorateClass = (decorators, target, key, kind) => {
 			var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc(target, key) : target
 			for (var i = decorators.length - 1, decorator; i >= 0; i--)
